@@ -249,21 +249,18 @@ presentation:
   - кликнуть на текущей ветке в правом нижнем углу), кликнуть по стрелочке справа от ветки и выбрать `Merge into Current`
 - Sourcetree:
   - Branch context menu | Merge <branch_name> into current branch
-<!-- slide vertical=true data-notes="Merge conflicts occur when the same part of the code has been modified in both branches. For example, if the same line of README.md is edited in fix and master"-->
+<!-- slide vertical=true data-notes=" -->
 
-##### Разрешение базовых клнфликтов слияния
+##### Разрешение базовых конфликтов слияния
 
 - Shell:
+    Merge conflicts occur when the same part of the code has been modified in both branches. For example, if the same line of `README.md` is edited in `fix` and `master`. The file impacted will have conflict-resolution markers (`<<<<<<<` and `>>>>>>>`) added to it by git, showing the conflicting lines (separated by `=======`)
 
     ```shell
     $ git merge fix
     # conflict with README.md
     # merge failed
-    ```
-
-    The file impacted will have conflict-resolution markers (`<<<<<<<` and `>>>>>>>`) added to it by git, showing the conflicting lines (separated by `=======`). Opening `README.md` in a text editor:
-
-    ```shell
+    $ cat README.md
     To contact us email:
     <<<<<<< HEAD
     hello@enki.com

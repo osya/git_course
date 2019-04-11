@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e6ce15-a58f-462f-ad60-38dfe88f1be6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="302">
-                <caret line="378" lean-forward="true" selection-start-line="378" selection-end-line="378" />
+                <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
               </first_editor>
               <second_editor />
             </state>
@@ -110,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554930453021</updated>
-      <workItem from="1554930454174" duration="11770000" />
+      <workItem from="1554930454174" duration="12900000" />
     </task>
     <task id="LOCAL-00001" summary="Translate to russian">
       <created>1554965055486</created>
@@ -175,11 +175,32 @@
       <option name="project" value="LOCAL" />
       <updated>1554985660859</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix text outside slides">
+      <created>1554988873011</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554988873011</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix text outside slides">
+      <created>1554988995725</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554988995725</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix merge slide">
+      <created>1554989348229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1554989348229</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11770000" />
+    <option name="totallyTimeSpent" value="12900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -244,7 +265,9 @@
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="Update practical exercises" />
     <MESSAGE value="Use RevealJS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use RevealJS" />
+    <MESSAGE value="Fix text outside slides" />
+    <MESSAGE value="Fix merge slide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix merge slide" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -254,7 +277,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="302">
-            <caret line="378" lean-forward="true" selection-start-line="378" selection-end-line="378" />
+            <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
           </first_editor>
           <second_editor />
         </state>
