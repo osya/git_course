@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="414">
-                <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+              <first_editor relative-caret-position="4428">
+                <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
               </first_editor>
               <second_editor />
             </state>
@@ -87,6 +87,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../delis-archive" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554930453021</updated>
-      <workItem from="1554930454174" duration="6933000" />
+      <workItem from="1554930454174" duration="8304000" />
     </task>
     <task id="LOCAL-00001" summary="Translate to russian">
       <created>1554965055486</created>
@@ -140,11 +141,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554967680632</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Git installation">
+      <created>1554968766202</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554968766202</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix warnings">
+      <created>1554969010045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554969010045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6933000" />
+    <option name="totallyTimeSpent" value="8304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -179,7 +194,9 @@
     <MESSAGE value="Add branch definition" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Rename &quot;бранч&quot; to &quot;ветка&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename &quot;бранч&quot; to &quot;ветка&quot;" />
+    <MESSAGE value="Add Git installation" />
+    <MESSAGE value="Fix warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix warnings" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -188,8 +205,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="414">
-            <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <first_editor relative-caret-position="4428">
+            <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
           </first_editor>
           <second_editor />
         </state>
