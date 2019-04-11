@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72e6ce15-a58f-462f-ad60-38dfe88f1be6" name="Default Changelist" comment="Add branch definition">
+    <list default="true" id="72e6ce15-a58f-462f-ad60-38dfe88f1be6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="199">
-                <caret line="46" column="80" lean-forward="true" selection-start-line="46" selection-start-column="80" selection-end-line="46" selection-end-column="80" />
+              <first_editor relative-caret-position="414">
+                <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               </first_editor>
               <second_editor />
             </state>
@@ -36,6 +37,10 @@
       <find>те</find>
       <find>click</find>
       <find>templ</find>
+      <find>in vscode</find>
+      <find>бранч</find>
+      <find>insta</find>
+      <find>Insta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554930453021</updated>
-      <workItem from="1554930454174" duration="5200000" />
+      <workItem from="1554930454174" duration="6933000" />
     </task>
     <task id="LOCAL-00001" summary="Translate to russian">
       <created>1554965055486</created>
@@ -121,11 +126,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554966789996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix typo">
+      <created>1554967063539</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554967063539</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rename &quot;бранч&quot; to &quot;ветка&quot;">
+      <created>1554967680632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554967680632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5200000" />
+    <option name="totallyTimeSpent" value="6933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -158,14 +177,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Translate to russian" />
     <MESSAGE value="Add branch definition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add branch definition" />
+    <MESSAGE value="Fix typo" />
+    <MESSAGE value="Rename &quot;бранч&quot; to &quot;ветка&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename &quot;бранч&quot; to &quot;ветка&quot;" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="199">
-            <caret line="46" column="80" lean-forward="true" selection-start-line="46" selection-start-column="80" selection-end-line="46" selection-end-column="80" />
+          <first_editor relative-caret-position="414">
+            <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>

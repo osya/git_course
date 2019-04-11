@@ -17,7 +17,7 @@
 
 ## Настройка различных инструментов для работы с Git
 
-- Shell: Cmder: PowerShell: Posh-Git: Installation: запустить PowerShell с правами администратора и выполнить: "Install-Module posh-git"
+- Shell: Cmder: PowerShell: Posh-Git: Установка: запустить PowerShell с правами администратора и выполнить: "Install-Module posh-git"
 - VSCode:
   - [Cmder & VS Code Integration](https://github.com/cmderdev/cmder/wiki/Seamless-VS-Code-Integration)
   - Git extensions for VSCode:
@@ -27,6 +27,12 @@
 - GitLab, SourceTree - ничего настраивать не нужно
 
 ## Основные варианты использования
+
+### Установка Git
+
+- https://git-scm.com/download/win
+- SourceTree: Sourcetree при установке может устанавливать git и hg
+- Windows Server: Web Platform Installer (WebPI): Git for Windows присутствует в WebPI 
 
 ### Инициализация Git репозитория
 
@@ -297,3 +303,7 @@ Cherry-picking is the method to apply a single, specific commit from another bra
   - VCS | Git | Revert...
   - кнопка "Revert" на Toolbar'е
 - Sourcetree: Commit context menu | Reverse commit...
+
+## Практические задания
+
+1. Установить Git
