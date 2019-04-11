@@ -115,7 +115,9 @@ presentation:
   - кликнуть на текущей ветке в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания ветки происходит checkout в эту ветку
   - `Git: Create Branch From...`, `Git: Create Branch`
   - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Create Branch (via Terminal)...`
-- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch"
+- PHPStorm:
+  - кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch"
+  - При подключении JIRA в качестве Issue Tracker'а при открытии задачи есть галка `Create branch`
 - Sourcetree: Repository | Branch | New Branch
 <!-- slide vertical=true -->
 
@@ -362,11 +364,25 @@ This generates a new commit with all the changes introduced in \<commit\> afterw
   - Commit context menu | Reverse commit...
 <!-- slide -->
 
-## Git Flow
+## Git Flow diagram
 
 ![Git Flow diagram](git-model@2x.png)
-<!-- {:height="600px" width="36px"} -->
-<!-- <img src="git-model@2x.png" height="600"> -->
+
+<!-- slide -->
+
+## Git Flow Tools
+
+- Shell
+- VSCode: [расширение `gitflow`](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow):
+  - `GitFlow: Initialize repository for gitflow` - создает бранчи `develop` и `master` - в отличие от `Git-flow` button from `Sourcetree`
+- PHPStorm:
+  - [плагин `Git Flow Integration`](https://plugins.jetbrains.com/plugin/7315-git-flow-integration)
+  - При подключении JIRA в качестве Issue Tracker'а при открытии задачи есть галка `Create branch`
+- Sourcetree:
+  - Main menu | Repository | Git-flow | Initialise repository
+  - `Git-flow` button:
+    - Не создает автоматически бранчи - в отличие от `GitFlow: Initialize repository for gitflow` в VSCode
+
 <!-- slide -->
 
 ## Практические задания
