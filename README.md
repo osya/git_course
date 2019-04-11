@@ -362,6 +362,13 @@ This generates a new commit with all the changes introduced in \<commit\> afterw
   - Commit context menu | Reverse commit...
 <!-- slide -->
 
+## Git Flow
+
+![Git Flow diagram](git-model@2x.png)
+<!-- {:height="600px" width="36px"} -->
+<!-- <img src="git-model@2x.png" height="600"> -->
+<!-- slide -->
+
 ## Практические задания
 <!-- slide -->
 
