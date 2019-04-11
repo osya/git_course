@@ -35,7 +35,7 @@
 - PHPStorm: VCS | Import into Version Control | Create Git Repository...
 - Sourcetree: New tab | Create
 
-### `.gitignore`
+### Игнорированеи файлов `.gitignore`
 
 - VSCode: [`gitignore` extension](https://github.com/CodeZombieCH/vscode-gitignore) - A simple extension for Visual Studio Code that lets you pull .gitignore files from the [repository](https://github.com/github/gitignore):
   - добавляется команда `Add gitignore` с поддержкой templat'ов - как в плагине ".ignore" в PHPStorm
@@ -51,6 +51,10 @@
   - Cons: нет template'ов - в отличие от gitignore` extension in VSCode, ".ignore" plugin in PHPStorm
 
 ### Работа с ветками
+
+#### Что такое ветка в Git
+
+Ветка в Git - это метка для коммита. The label moves to new commits as they are created. Когда вы содаете нову ветку вы ничего не изменяете в структуре репозитория. Вы просто создаете новую метку
 
 В Git есть два типа веток:
 
@@ -236,10 +240,10 @@
   - Main menu| VCS | Commit
 - Sourcetree:
   - Нажать на кнопку "Commit" на панели инструментов
-  - On the 'Unstaged files' window, every unstaged changes will appear here. Select files to stage before committing
-  - Here's the 'Staged' files window, staged files will appear here. To unstage a file again, just check the checkbox next to the staged file and the file will be back in unstaged mode.
-  - Enter a commit message here.
-  - Нажать кнопку "Commit" для коммита всех проиндексированных изменений в репозиторий
+  - В окне "Unstaged files" содержатся все непроиндексированные изменения. Выберать файлы для индексации перед коммитом
+  - В окне "Staged files" содержатся все проиндексированные файлы. Для удаления файла из индекса нажать на "минус" справа от файла
+  - Ввести комментарий к коммиту
+  - Нажать кнопку "Commit" для фиксации всех проиндексированных изменений в репозитории
 
 #### Partial commits
 
