@@ -393,6 +393,33 @@ This generates a new commit with all the changes introduced in \<commit\> afterw
 
 <!-- slide -->
 
+## Merge Requests (MR)
+
+Merge Request предназначен для Code Review
+
+Аналогом MR в GitLab является Pull Request в GitHub
+<!-- slide -->
+
+### Working with MR in different Tools
+
+- VSCode: [`GitLab Workflow`](https://gitlab.com/fatihacet/gitlab-vscode-extension)
+- PHPStorm:
+  - плагин `GitLab Projects`:
+    - Settings | Version Control | GitLab
+    - В меню Git добавляется меню "Git Lab" с пунктами "Create Merge Request..." и "List Merge Requests..."
+  - плагин `GitLab Quick Merge Request`:
+    - Добавляется Settings | Version Control | GitLab Quick Merge Request
+
+<!-- slide -->
+
+### Crate MR in GitLab
+
+- Название MR лучше копировать из названия задачи в JIRA
+- Заполнить поле Assignee
+- Установить галку `Delete source branch`
+
+<!-- slide -->
+
 ## Практические задания
 <!-- slide -->
 
