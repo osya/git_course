@@ -372,14 +372,15 @@ This generates a new commit with all the changes introduced in \<commit\> afterw
 
 ## Git Flow Tools
 
-- Shell
-- VSCode: [расширение `gitflow`](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow):
-  - `GitFlow: Initialize repository for gitflow` - создает бранчи `develop` и `master` - в отличие от `Git-flow` button from `Sourcetree`
+- Shell:
+  - `git flow feature start <feature_name>`
+  - `git flow feature finish <feature_name>`
+- VSCode: [расширение `gitflow`](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
 - PHPStorm:
   - [плагин `Git Flow Integration`](https://plugins.jetbrains.com/plugin/7315-git-flow-integration)
   - При подключении JIRA в качестве Issue Tracker'а при открытии задачи есть галка `Create branch`
 - Sourcetree:
-  - Main menu | Repository | Git-flow | Initialise repository
+  - Main menu | Repository | Git-flow
   - `Git-flow` button:
     - Не создает автоматически бранчи - в отличие от `GitFlow: Initialize repository for gitflow` в VSCode
 
