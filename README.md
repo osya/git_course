@@ -1,17 +1,21 @@
-# Программа курса по Git для "Делис Инфо"
+# Программа обучающего курса по Git
 
 ## Что такое Git
 
-- Git - это распределённая система управления версиями (Distributed Version Control System (DVCS))
-- Git - это некий аналог Blockchain
+- Git - это распределённая система управления версиями
+- Git - это некий аналог блокчейн
 - Альтернативой Git может выступать, например, Mercurial
 
 ## Назначение Git
 
 - Хранение исходного кода
-- git deploy
+- Развертывание
 
-## Настройка различных Tool'ов для работы с Git
+## О данном курсе
+
+По Git, как и по другим IT-технологиям, есть море различных ресурсов. Особенностью данного курса является то, что выделены основные варианты использования Git'а. И показано как все эти варианты использования реализуются в основных инструментах (Shell, текстовый редактор VSCode, IDE PHPStorm и GUI для Git'а Sourcetree)
+
+## Настройка различных инструментов для работы с Git
 
 - Shell: Cmder: PowerShell: Posh-Git: Installation: запустить PowerShell с правами администратора и выполнить: "Install-Module posh-git"
 - VSCode:
@@ -22,9 +26,9 @@
 - PHPStorm: Settings | Tools | Terminal | `"cmd.exe" /k "<path_to_cmder>\vendor\init.bat"`
 - GitLab, SourceTree - ничего настраивать не нужно
 
-## Main usecases
+## Основные варианты использования
 
-### Initialize Git Repository
+### Инициализация Git репозитория
 
 - Shell: `git init`
 - VSCode: `Git: Initialize Repository`
@@ -46,12 +50,12 @@
   - Options | Git | Global Ignore List
   - Cons: нет template'ов - в отличие от gitignore` extension in VSCode, ".ignore" plugin in PHPStorm
 
-### Working with branches
+### Работа с ветками
 
-There are two types of branches:
+В Git есть два типа веток:
 
-- Local branches. Locally stored in .git/refs/heads/
-- Remote-tracking branches
+- Локальные ветки - хранятся в директории .git/refs/heads/
+- Удаленные (Remote-tracking) ветки
 
 #### View branch list. List of branches
 
@@ -62,17 +66,17 @@ There are two types of branches:
 - PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню со списком бранчей
 - Sourcetree: список бранчей отобажается в левом sidebar'е в узле "BRANCHES"
 
-#### Create new branch
+#### Создание новой ветки
 
 - Shell: `git branch <branch_name>`
 - VSCode:
   - кликнуть на текущем бранче в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания бранча происходит checkout в этот бранч
   - `Git: Create Branch From...`, `Git: Create Branch`
-  - [`Git Lens`](github.com/eamodio/vscode-gitlens): Branch Context menu | `Create Branch (via Terminal)...`
+  - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Create Branch (via Terminal)...`
 - PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню с пунктом "New Branch"
 - Sourcetree: Repository | Branch | New Branch
 
-#### View current branch
+#### Узнать какая текущая ветка
 
 - Shell:
   - В Cmder & Posh-Git текущий бранч отображается в приглашении консоли. Но следует помнить, что это значение не изменяется при изменении текущего бранча иными способами
@@ -98,7 +102,7 @@ There are two types of branches:
 - VS Code:
   - Можно кликнуть на названии бранча в левом нижнем углу и выбрать из меню новый бранч
   - `Git: Checkout to...` command
-  - [Git Lens`](github.com/eamodio/vscode-gitlens):
+  - [Git Lens`](https://github.com/eamodio/vscode-gitlens):
     - Branch Context menu | `Checkout`
     - справа от названия бранча есть конка "Checkout"
   - Cons: При переключении ветки в VS Code текущий бранч в Cmder не изменяется
@@ -106,25 +110,25 @@ There are two types of branches:
   - переключатель бранчей находится в правом нижнем углу, в status bar'е
   - Cons: При переключении ветки в VS Code текущий бранч в Cmder не изменяется
 - SourceTree:
-  - double-click на бранче
+  - двойной клик на бранче
   - Main menu | Repository | Checkout...
   - SourceTree при переключении бранчей переключает их со всеми изменениями, не перенося изменения в stash
 
-#### Delete local branch
+#### Удалить локальную ветку
 
 - Shell:
   - `git branch -d <branch_name>`
   - `git branch -D <branch_name>`
 - VS Code:
   - `Git: Delete Branch...`. Эта команда удаляет только локальные бранчи. Удалить с помощью этой команды remote branch нельзя
-  - [`Git Lens`](github.com/eamodio/vscode-gitlens): Branch Context menu | `Delete Branch (via Terminal)`. Этот способ для remote branches не работает
+  - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Delete Branch (via Terminal)`. Этот способ для remote branches не работает
 - PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню со списком бранчей. Кликнуть на стрелочку справа от бранча. В открывшемся меню выбрать "Delete"
 - Sourcetree:
   - from context menu: "Delete <branch_name>..."
   - Main menu | Repository | Branch | Delete Branches
   - при выполнении "Git-flow | Finish Feature" в окне "Finish Feature" есть галки "Delete branch" и "Force deletion"
 
-#### Rename branch
+#### Переименовать ветку
 
 - Shell: `git branch -m old_branch new_branch`
 - VSCode: `Git: Rename Branch...` - переименовывает текущий бранч
@@ -132,7 +136,7 @@ There are two types of branches:
 - Sourcetree: Branch context menu: "Rename <branch_name>..."
 - GitLab: [Cannot rename branches](https://gitlab.com/gitlab-org/gitlab-ce/issues/50840)
 
-#### Compare two branches
+#### Сравнить две ветки
 
 - Shell: `git diff branch1 branch2`
 - VSCode:
@@ -142,9 +146,9 @@ There are two types of branches:
 - PHPStorm:
   - Git | Compare with branch - сравнивает один файл
   - Выбрать бранч (либо Context menu | Git | Repository | Branches | \<choose branch\>, либо кликнуть на текущем бранче в правом нижнем углу), кликнуть по стрелочке справа от бранча и выбрать "Compare with Current" - сравнивает все файлы в бранче
-- Sourcetree: right-click on a branch and select the "Diff against current" context menu command (current refers to the branch you are currently working on). This will give you the diff between the head commits of the two branches
+- Sourcetree: щелкнуть правой кнопкой мыши на ветке и выберать из контекстного меню пункт "Diff against current" (current refers to the branch you are currently working on). This will give you the diff between the head commits of the two branches
 
-#### Working with remote branches
+#### Работа с удаленными (Remote-tracking) ветками
 
 ##### Pulling
 
@@ -155,11 +159,11 @@ There are two types of branches:
   - `Git: Pull`
   - `Git: Pull from...`
 - PHPStorm:
-  - `Update Project (update project)` button on Toolbar
+  - `Update Project (update project)` кнопка на панели инструментов
   - Main menu | VCS | Update Project...
   - Main menu | VCS | Git | Pull...
 - Sourcetree:
-  - `Pull` button in toolbar
+  - `Pull` кнопка на панели инструментов
   - Branch Context menu | Pull (tracked)
 
 ##### Pushing
@@ -174,11 +178,11 @@ There are two types of branches:
   - Main menu | VCS | Git | Push...
   - в окне "Commit Changes" если нажать на стрелочку справа от кнопки "Commit", то появится кнопка "Commit and Push..."
 - Sourcetree:
-  - `Push` button in Toolbar
+  - `Push` кнопка на панели инструментов
   - Branch Context menu | `Push to`, `Push to (tracked)`
   - Pros: Sourcetree позволяет пушить сразу несколько веток - в отличие от PHPStrom
 
-#### Merging
+#### Слияние
 
 - Shell: `git merge`
 - VS Code:
@@ -188,7 +192,7 @@ There are two types of branches:
 - PHPStorm: кликнуть на текущем бранче в правом нижнем углу), кликнуть по стрелочке справа от бранча и выбрать `Merge into Current`
 - Sourcetree: Branch context menu | Merge <branch_name> into current branch
 
-##### Solving basic merge conflicts
+##### Разрешение базовых клнфликтов слияния
 
 - Shell:
 
@@ -213,15 +217,15 @@ There are two types of branches:
 
     You have to manually choose the option you want or combine them. Then run `git add` to mark the file as resolved. When you're done resolving conflicts finalize the merge with `git commit`.
 - VSCode:
-  - Click "Source Control" button on left.
+  - Нажать на кнопку "Source Control" слева
   - See MERGE CHANGES in sidebar.
   - Those files have merge conflicts.
 - PHPStorm: "Resolve Conflicts"
 - Sourcetree: Main menu | Actions | Resolve Conflicts
 
-### Working with commits
+### Работа с коммитами
 
-#### Create commit
+#### Создание коммита
 
 - Shell: `git commit -m <commit_message>`
 - VSCode:
@@ -231,11 +235,11 @@ There are two types of branches:
   - кнопка Commit на Toolbar'е
   - Main menu| VCS | Commit
 - Sourcetree:
-  - Click on the "Commit" button on the toolbar.
+  - Нажать на кнопку "Commit" на панели инструментов
   - On the 'Unstaged files' window, every unstaged changes will appear here. Select files to stage before committing
   - Here's the 'Staged' files window, staged files will appear here. To unstage a file again, just check the checkbox next to the staged file and the file will be back in unstaged mode.
   - Enter a commit message here.
-  - Click "Commit" to commit all staged changes to the repository.
+  - Нажать кнопку "Commit" для коммита всех проиндексированных изменений в репозиторий
 
 #### Partial commits
 
