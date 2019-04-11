@@ -30,9 +30,9 @@
 
 ### Установка Git
 
-- https://git-scm.com/download/win
+- [Страница загрузки на официальном сайте](https://git-scm.com/download/win)
 - SourceTree: Sourcetree при установке может устанавливать git и hg
-- Windows Server: Web Platform Installer (WebPI): Git for Windows присутствует в WebPI 
+- Windows Server: Web Platform Installer (WebPI): Git for Windows присутствует в WebPI
 
 ### Инициализация Git репозитория
 
