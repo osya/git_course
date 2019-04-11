@@ -66,28 +66,28 @@
 - Shell:
   - Local branches: `git branch`
   - Remote branches: `git branch -r`
-- VSCode: кликнуть на текущем бранче в левом нижнем углу. Появится меню со списком бранчей
-- PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню со списком бранчей
-- Sourcetree: список бранчей отобажается в левом sidebar'е в узле "BRANCHES"
+- VSCode: кликнуть на текущей ветке в левом нижнем углу. Появится меню со списком веток
+- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню со списком веток
+- Sourcetree: список веток отобажается в левом sidebar'е в узле "BRANCHES"
 
 #### Создание новой ветки
 
 - Shell: `git branch <branch_name>`
 - VSCode:
-  - кликнуть на текущем бранче в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания бранча происходит checkout в этот бранч
+  - кликнуть на текущей ветке в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания ветки происходит checkout в эту ветку
   - `Git: Create Branch From...`, `Git: Create Branch`
   - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Create Branch (via Terminal)...`
-- PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню с пунктом "New Branch"
+- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch"
 - Sourcetree: Repository | Branch | New Branch
 
 #### Узнать какая текущая ветка
 
 - Shell:
-  - В Cmder & Posh-Git текущий бранч отображается в приглашении консоли. Но следует помнить, что это значение не изменяется при изменении текущего бранча иными способами
+  - В Cmder & Posh-Git текущая ветка отображается в приглашении консоли. Но следует помнить, что это значение не изменяется при изменении текущей ветки иными способами
   - `git status`
-- VSCode: текущий бранч отображается в левом нижнем углу
-- PHPStorm: текущий бранч отображается в правом нижнем углу
-- Sourcetree: текущий бранч выделен жирным шрифтом
+- VSCode: текущая ветка отображается в левом нижнем углу
+- PHPStorm: текущая ветка отображается в правом нижнем углу
+- Sourcetree: текущая ветка выделена жирным шрифтом
 
 #### Checkout branch
 
@@ -95,28 +95,28 @@
 
 - Shell: `git checkout -b feature` # Создаёт новую ветвь, названную "feature" и делает её активной
 - VSCode:
-  - `Git: Create Branch`: после создания бранча происходит checkout в этот бранч
-  - кликнуть на текущем бранче в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания бранча происходит checkout в этот бранч
-- PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню с пунктом "New Branch". В окне "Create New Branch" есть галка "Checkout branch"
+  - `Git: Create Branch`: после создания ветки происходит checkout в эту ветку
+  - кликнуть на текущей ветке в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания ветки происходит checkout в эту ветку
+- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch". В окне "Create New Branch" есть галка "Checkout branch"
 - Sourcetree: Repository | Branch | New Branch. Есть галка "Checkout New Branch"
 
 ##### Checkout branch after create
 
 - Shell: `git checkout <branch_name>`
 - VS Code:
-  - Можно кликнуть на названии бранча в левом нижнем углу и выбрать из меню новый бранч
+  - Можно кликнуть на названии ветки в левом нижнем углу и выбрать из меню новую ветку
   - `Git: Checkout to...` command
   - [Git Lens`](https://github.com/eamodio/vscode-gitlens):
     - Branch Context menu | `Checkout`
-    - справа от названия бранча есть конка "Checkout"
-  - Cons: При переключении ветки в VS Code текущий бранч в Cmder не изменяется
+    - справа от названия ветки есть конка "Checkout"
+  - Cons: При переключении ветки в VS Code текущая ветка в Cmder не изменяется
 - PHPStorm:
-  - переключатель бранчей находится в правом нижнем углу, в status bar'е
-  - Cons: При переключении ветки в VS Code текущий бранч в Cmder не изменяется
+  - переключатель веток находится в правом нижнем углу, в status bar'е
+  - Cons: При переключении ветки в VS Code текущая ветка в Cmder не изменяется
 - SourceTree:
-  - двойной клик на бранче
+  - двойной клик на ветке
   - Main menu | Repository | Checkout...
-  - SourceTree при переключении бранчей переключает их со всеми изменениями, не перенося изменения в stash
+  - SourceTree при переключении веток переключает их со всеми изменениями, не перенося изменения в stash
 
 #### Удалить локальную ветку
 
@@ -124,9 +124,9 @@
   - `git branch -d <branch_name>`
   - `git branch -D <branch_name>`
 - VS Code:
-  - `Git: Delete Branch...`. Эта команда удаляет только локальные бранчи. Удалить с помощью этой команды remote branch нельзя
+  - `Git: Delete Branch...`. Эта команда удаляет только локальные ветки. Удалить с помощью этой команды удаленные (remote) ветки нельзя
   - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Delete Branch (via Terminal)`. Этот способ для remote branches не работает
-- PHPStorm: кликнуть на текущем бранче в правом нижнем углу. Появится меню со списком бранчей. Кликнуть на стрелочку справа от бранча. В открывшемся меню выбрать "Delete"
+- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню со списком веток. Кликнуть на стрелочку справа от ветки. В открывшемся меню выбрать "Delete"
 - Sourcetree:
   - from context menu: "Delete <branch_name>..."
   - Main menu | Repository | Branch | Delete Branches
@@ -135,7 +135,7 @@
 #### Переименовать ветку
 
 - Shell: `git branch -m old_branch new_branch`
-- VSCode: `Git: Rename Branch...` - переименовывает текущий бранч
+- VSCode: `Git: Rename Branch...` - переименовывает текущую ветку
 - PHPStorm: кликнуть по стрелочке справа от имени branch'а и появится "Rename..."
 - Sourcetree: Branch context menu: "Rename <branch_name>..."
 - GitLab: [Cannot rename branches](https://gitlab.com/gitlab-org/gitlab-ce/issues/50840)
@@ -146,10 +146,10 @@
 - VSCode:
   - Git Lens: `COMPARE` node
   - [`GitLab Workflow`](https://gitlab.com/fatihacet/gitlab-vscode-extension):
-    - `GitLab: Compare current branch with master` - открывает сравнение бранчей в GitLab'е
+    - `GitLab: Compare current branch with master` - открывает сравнение веток в GitLab'е
 - PHPStorm:
   - Git | Compare with branch - сравнивает один файл
-  - Выбрать бранч (либо Context menu | Git | Repository | Branches | \<choose branch\>, либо кликнуть на текущем бранче в правом нижнем углу), кликнуть по стрелочке справа от бранча и выбрать "Compare with Current" - сравнивает все файлы в бранче
+  - Выбрать ветку (либо Context menu | Git | Repository | Branches | \<choose branch\>, либо кликнуть на текущей ветке в правом нижнем углу), кликнуть по стрелочке справа от ветки и выбрать "Compare with Current" - сравнивает все файлы в ветке
 - Sourcetree: щелкнуть правой кнопкой мыши на ветке и выберать из контекстного меню пункт "Diff against current" (current refers to the branch you are currently working on). This will give you the diff between the head commits of the two branches
 
 #### Работа с удаленными (Remote-tracking) ветками
@@ -193,7 +193,7 @@
   - `Git: Merge Branch...`
   - `Git Merger` extension:
     - Cons: missed in the `Git Extension Pack`
-- PHPStorm: кликнуть на текущем бранче в правом нижнем углу), кликнуть по стрелочке справа от бранча и выбрать `Merge into Current`
+- PHPStorm: кликнуть на текущей ветке в правом нижнем углу), кликнуть по стрелочке справа от ветки и выбрать `Merge into Current`
 - Sourcetree: Branch context menu | Merge <branch_name> into current branch
 
 ##### Разрешение базовых клнфликтов слияния
