@@ -1,4 +1,15 @@
-# Программа обучающего курса по Git
+---
+title: "Программа обучающего курса по Git"
+author: Valeriy Osipov
+presentation:
+  enableSpeakerNotes: true
+---
+<!-- slide -->
+
+## О данном курсе
+
+По Git, как и по другим IT-технологиям, есть море различных ресурсов. Особенностью данного курса является то, что выделены основные варианты использования Git'а. И показано как все эти варианты использования реализуются в основных инструментах (Shell, текстовый редактор VSCode, IDE PHPStorm и GUI для Git'а Sourcetree). Это позволит выполнять все действия с Git в вашем основном инструменте, что будет препятствовать потере фокуса и будет способствовать повышению продуктивности
+<!-- slide -->
 
 ## Что такое Git
 
@@ -6,14 +17,12 @@
 - Git - это некий аналог блокчейн
 - Альтернативой Git может выступать, например, Mercurial
 
+<!-- slide -->
 ## Назначение Git
 
-- Хранение исходного кода
-- Развертывание
-
-## О данном курсе
-
-По Git, как и по другим IT-технологиям, есть море различных ресурсов. Особенностью данного курса является то, что выделены основные варианты использования Git'а. И показано как все эти варианты использования реализуются в основных инструментах (Shell, текстовый редактор VSCode, IDE PHPStorm и GUI для Git'а Sourcetree). Это позволит выполнять все действия с Git в вашем основном инструменте, что будет препятствовать потере фокуса и будет способствовать повышению продуктивности
+- Хранение исходного кода <!-- .element: class="fragment" data-fragment-index="1" -->
+- Развертывание <!-- .element: class="fragment" data-fragment-index="2" -->
+<!-- slide -->
 
 ## Настройка различных инструментов для работы с Git
 
@@ -25,14 +34,17 @@
       - Cons: Miss [`gitflow`](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow), `Git Merger`
 - PHPStorm: Settings | Tools | Terminal | `"cmd.exe" /k "<path_to_cmder>\vendor\init.bat"`
 - GitLab, SourceTree - ничего настраивать не нужно
+<!-- slide -->
 
 ## Основные варианты использования
+<!-- slide  -->
 
 ### Установка Git
 
 - [Страница загрузки на официальном сайте](https://git-scm.com/download/win)
 - SourceTree: Sourcetree при установке может устанавливать git и hg
 - Windows Server: Web Platform Installer (WebPI): Git for Windows присутствует в WebPI
+<!-- slide -->
 
 ### Инициализация Git репозитория
 
@@ -40,6 +52,7 @@
 - VSCode: `Git: Initialize Repository`
 - PHPStorm: VCS | Import into Version Control | Create Git Repository...
 - Sourcetree: New tab | Create
+<!-- slide -->
 
 ### Игнорирование файлов `.gitignore`
 
@@ -55,8 +68,10 @@
   - In Sourcetree you should be able to right click on one of the files/folders and select `ignore`. This will auto create a `.gitignore` file for you with that particular file/folder in it
   - Options | Git | Global Ignore List
   - Cons: нет шаблонов - в отличие от `gitignore` extension в VSCode, ".ignore" plugin in PHPStorm
+<!-- slide -->
 
 ### Работа с ветками
+<!-- slide vertical=true -->
 
 #### Что такое ветка в Git
 
@@ -66,6 +81,7 @@
 
 - Локальные ветки - хранятся в директории .git/refs/heads/
 - Удаленные (Remote-tracking) ветки
+<!-- slide vertical=true -->
 
 #### View branch list. List of branches
 
@@ -75,6 +91,7 @@
 - VSCode: кликнуть на текущей ветке в левом нижнем углу. Появится меню со списком веток
 - PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню со списком веток
 - Sourcetree: список веток отобажается в левом sidebar'е в узле "BRANCHES"
+<!-- slide vertical=true -->
 
 #### Создание новой ветки
 
@@ -85,6 +102,7 @@
   - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Create Branch (via Terminal)...`
 - PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch"
 - Sourcetree: Repository | Branch | New Branch
+<!-- slide vertical=true -->
 
 #### Узнать какая текущая ветка
 
@@ -94,8 +112,10 @@
 - VSCode: текущая ветка отображается в левом нижнем углу
 - PHPStorm: текущая ветка отображается в правом нижнем углу
 - Sourcetree: текущая ветка выделена жирным шрифтом
+<!-- slide vertical=true -->
 
 #### Checkout branch
+<!-- slide vertical=true -->
 
 ##### Checkout branch during create
 
@@ -105,6 +125,7 @@
   - кликнуть на текущей ветке в левом нижнем углу. Появится меню с пунктами `Create new branch...` и `Create new branch from...`. При выборе пункта `Create new branch...` после создания ветки происходит checkout в эту ветку
 - PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню с пунктом "New Branch". В окне "Create New Branch" есть галка "Checkout branch"
 - Sourcetree: Repository | Branch | New Branch. Есть галка "Checkout New Branch"
+<!-- slide vertical=true -->
 
 ##### Checkout branch after create
 
@@ -123,6 +144,7 @@
   - двойной клик на ветке
   - Main menu | Repository | Checkout...
   - SourceTree при переключении веток переключает их со всеми изменениями, не перенося изменения в stash
+<!-- slide vertical=true -->
 
 #### Удалить локальную ветку
 
@@ -137,6 +159,7 @@
   - from context menu: "Delete <branch_name>..."
   - Main menu | Repository | Branch | Delete Branches
   - при выполнении "Git-flow | Finish Feature" в окне "Finish Feature" есть галки "Delete branch" и "Force deletion"
+<!-- slide vertical=true -->
 
 #### Переименовать ветку
 
@@ -145,6 +168,7 @@
 - PHPStorm: кликнуть по стрелочке справа от имени branch'а и появится "Rename..."
 - Sourcetree: Branch context menu: "Rename <branch_name>..."
 - GitLab: [Cannot rename branches](https://gitlab.com/gitlab-org/gitlab-ce/issues/50840)
+<!-- slide vertical=true -->
 
 #### Сравнить две ветки
 
@@ -157,8 +181,10 @@
   - Git | Compare with branch - сравнивает один файл
   - Выбрать ветку (либо Context menu | Git | Repository | Branches | \<choose branch\>, либо кликнуть на текущей ветке в правом нижнем углу), кликнуть по стрелочке справа от ветки и выбрать "Compare with Current" - сравнивает все файлы в ветке
 - Sourcetree: щелкнуть правой кнопкой мыши на ветке и выберать из контекстного меню пункт "Diff against current" (current refers to the branch you are currently working on). This will give you the diff between the head commits of the two branches
+<!-- slide vertical=true -->
 
 #### Работа с удаленными (Remote-tracking) ветками
+<!-- slide vertical=true -->
 
 ##### Pulling
 
@@ -175,6 +201,7 @@
 - Sourcetree:
   - `Pull` кнопка на панели инструментов
   - Branch Context menu | Pull (tracked)
+<!-- slide vertical=true -->
 
 ##### Pushing
 
@@ -191,6 +218,7 @@
   - `Push` кнопка на панели инструментов
   - Branch Context menu | `Push to`, `Push to (tracked)`
   - Pros: Sourcetree позволяет пушить сразу несколько веток - в отличие от PHPStrom
+<!-- slide vertical=true -->
 
 #### Слияние
 
@@ -201,6 +229,7 @@
     - Cons: missed in the `Git Extension Pack`
 - PHPStorm: кликнуть на текущей ветке в правом нижнем углу), кликнуть по стрелочке справа от ветки и выбрать `Merge into Current`
 - Sourcetree: Branch context menu | Merge <branch_name> into current branch
+<!-- slide vertical=true -->
 
 ##### Разрешение базовых клнфликтов слияния
 
@@ -232,8 +261,10 @@
   - Those files have merge conflicts.
 - PHPStorm: "Resolve Conflicts"
 - Sourcetree: Main menu | Actions | Resolve Conflicts
+<!-- slide -->
 
 ### Работа с коммитами
+<!-- slide vertical=true -->
 
 #### Создание коммита
 
@@ -250,12 +281,14 @@
   - В окне "Staged files" содержатся все проиндексированные файлы. Для удаления файла из индекса нажать на "минус" справа от файла
   - Ввести комментарий к коммиту
   - Нажать кнопку "Commit" для фиксации всех проиндексированных изменений в репозитории
+<!-- slide vertical=true -->
 
 #### Partial commits
 
 - VS Code: `Git: Stage Selected Ranges`
 - PHPStorm: в окне "Commit Changes" можно галочками выбирать изменения
 - Sourcetree: WORKSPACE | File Status: you can select lines to stage in the diff view of each uncommitted file. Then you commit what is in staging
+<!-- slide vertical=true -->
 
 #### Cherry-pick
 
@@ -275,6 +308,7 @@ Cherry-picking is the method to apply a single, specific commit from another bra
   - Context menu | Git: View File History. В открывшемся окне "File History" справа от каждого коммита есть кнопка "Cherry pick, Compare, etc"
 - PHPStorm: Version Control window | Log tab | commit context menu | Cherry-Pick
 - SourceTree: In the log view (Cmd-2), just select one or more commit lines (Cmd-click or Shift-click multi-selects), then right-click and select 'Cherry pick'
+<!-- slide vertical=true -->
 
 #### Amend commit (change your most recent commit)
 
@@ -293,6 +327,7 @@ Cherry-picking is the method to apply a single, specific commit from another bra
 - VSCode: `Git: Commit All (Amend)`, `Git: Commit Staged (Amend)`
 - PHPStorm: в окне "Commit Changes" есть галка "Amend commit"
 - Sourcetree: In SourceTree, the “Commit options…” dropdown list to the right of the commit dialog has an option to “Amend latest commit.” You’ll be asked if you want to replace the commit text in your current dialog with the message of the previous commit. Say yes, since you’re adding a file to the previous commit that you had meant to include all along
+<!-- slide vertical=true -->
 
 #### Revert commit - This generates a new commit with all the changes introduced in \<commit\> afterwards applying it to the current branch
 
@@ -303,6 +338,7 @@ Cherry-picking is the method to apply a single, specific commit from another bra
   - VCS | Git | Revert...
   - кнопка "Revert" на Toolbar'е
 - Sourcetree: Commit context menu | Reverse commit...
+<!-- slide -->
 
 ## Практические задания
 
