@@ -35,20 +35,20 @@
 - PHPStorm: VCS | Import into Version Control | Create Git Repository...
 - Sourcetree: New tab | Create
 
-### Игнорированеи файлов `.gitignore`
+### Игнорирование файлов `.gitignore`
 
 - VSCode: [`gitignore` extension](https://github.com/CodeZombieCH/vscode-gitignore) - A simple extension for Visual Studio Code that lets you pull .gitignore files from the [repository](https://github.com/github/gitignore):
-  - добавляется команда `Add gitignore` с поддержкой templat'ов - как в плагине ".ignore" в PHPStorm
+  - добавляется команда `Add gitignore` с поддержкой шаблонов - как в плагине ".ignore" в PHPStorm
   - Cons:
-    - При добавлении какого-либо темплейта в .gitignore несколько раз он добавляет несколько копий, хотя дублировать не нужно - в отличие от PyCharm
-    - Этот extension позволяет добавлять в .gitignore только файлы, но не позвляет добавлять в .gitignore директории - в отличие от ".ignore" плагина для PHPStorm
+    - При добавлении какого-либо шаблона в `.gitignore` несколько раз он добавляет несколько копий, хотя дублировать не нужно - в отличие от PyCharm
+    - Этот extension позволяет добавлять в `.gitignore` только файлы, но не позволяет добавлять в `.gitignore` директории - в отличие от `.ignore` плагина для PHPStorm
   - Pros: included in the `Git Extension Pack`, [.NET Core Extension Pack]
 - PHPStorm: плагин [.ignore](https://github.com/hsz/idea-gitignore) :
-  - Pros: подчеркивает entries defined more than one - в отличие от gitignore` extension in VSCode
+  - Pros: подчеркивает entries defined more than one - в отличие от `gitignore` extension в VSCode
 - Sourcetree:
   - In Sourcetree you should be able to right click on one of the files/folders and select `ignore`. This will auto create a `.gitignore` file for you with that particular file/folder in it
   - Options | Git | Global Ignore List
-  - Cons: нет template'ов - в отличие от gitignore` extension in VSCode, ".ignore" plugin in PHPStorm
+  - Cons: нет шаблонов - в отличие от `gitignore` extension в VSCode, ".ignore" plugin in PHPStorm
 
 ### Работа с ветками
 
