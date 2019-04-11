@@ -180,7 +180,7 @@ presentation:
 
 #### Удалить ветку при слиянии
 
-- Sourcetree: при выполнении `Git-flow | Finish Feature` в окне `Finish Feature` есть галки `Delete branch` и `Force deletion`
+- Sourcetree: при выполнении `Git-flow | Finish Feature (Finish Release)` в окне `Finish Feature` (`Finish Release`) есть галки `Delete branch` и `Force deletion`
 - GitLab: в MR есть галка `Delete source branch`
 <!-- slide vertical=true -->
 
