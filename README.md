@@ -171,11 +171,17 @@ presentation:
 - VS Code:
   - `Git: Delete Branch...`. Эта команда удаляет только локальные ветки. Удалить с помощью этой команды удаленные (remote) ветки нельзя
   - [`Git Lens`](https://github.com/eamodio/vscode-gitlens): Branch Context menu | `Delete Branch (via Terminal)`. Этот способ для remote branches не работает
-- PHPStorm: кликнуть на текущей ветке в правом нижнем углу. Появится меню со списком веток. Кликнуть на стрелочку справа от ветки. В открывшемся меню выбрать "Delete"
+- PHPStorm:
+  - кликнуть на текущей ветке в правом нижнем углу. Появится меню со списком веток. Кликнуть на стрелочку справа от ветки. В открывшемся меню выбрать "Delete"
 - Sourcetree:
   - from context menu: "Delete <branch_name>..."
   - Main menu | Repository | Branch | Delete Branches
-  - при выполнении "Git-flow | Finish Feature" в окне "Finish Feature" есть галки "Delete branch" и "Force deletion"
+<!-- slide vertical=true -->
+
+#### Удалить ветку при слиянии
+
+- Sourcetree: при выполнении `Git-flow | Finish Feature` в окне `Finish Feature` есть галки `Delete branch` и `Force deletion`
+- GitLab: в MR есть галка `Delete source branch`
 <!-- slide vertical=true -->
 
 #### Переименовать ветку
