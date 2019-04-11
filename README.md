@@ -242,6 +242,7 @@ presentation:
 - Sourcetree:
   - `Push` кнопка на панели инструментов
   - Branch Context menu | `Push to`, `Push to (tracked)`
+  - при выполнении `Git-flow | Finish Feature (Finish Release)` в окне `Finish Feature` (`Finish Release`) есть галка `Push changes to remote`
   - Плюсы: Sourcetree позволяет пушить сразу несколько веток - в отличие от PHPStrom
 <!-- slide vertical=true -->
 
