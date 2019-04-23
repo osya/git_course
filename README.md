@@ -283,7 +283,7 @@ presentation:
     You have to manually choose the option you want or combine them. Then run `git add` to mark the file as resolved. When you're done resolving conflicts finalize the merge with `git commit`
 <!-- slide vertical=true -->
 
-##### Разрешение базовых клнфликтов слияния #2
+##### Разрешение базовых конфликтов слияния #2
 
 - VSCode:
   - Нажать на кнопку "Source Control" слева
